@@ -1,0 +1,183 @@
+/*http://www.andreasknutsson.com/*/
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+      color: white;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+.hamburger {
+    width: 48px;
+    height: 42px;
+    border: 1px solid #eeeeef;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #eeeeef;
+    padding: 10px 10px;
+}
+
+.hamburger-stripe {
+    background-color: white;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+/* Add your CSS here */
+
+.container {
+    display:flex;
+    background-color: black;
+}
+
+.container.column {
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.logo{
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    order:0;
+}
+
+
+.logo img {
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
+.hamburger{
+    margin-right:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+    order:1;
+}
+
+.mainmenu{
+    order:2;
+}
+
+header{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:100%;
+    border-bottom: .5px solid lightgray;
+    align-items: center;
+}
+
+.mainmenu {
+    display:none;
+    width: 100%;
+    list-style-type: none;
+
+}
+
+.mainmenu > li:first-child{
+    border-top: .5px solid lightgray;
+}
+
+.mainmenu > li:last-child{
+    border:none;
+}
+
+
+
+
+.mainmenu > li {
+    padding: 15px;
+    border-bottom: .5px solid lightgray;
+}
+
+.front {
+    width: 100%;
+    height: 93vh;
+
+    text-align: center;
+
+}
+
+.front img {
+
+    margin-top: 200px;
+    width: 30%;
+
+}
+
+
+
+.content {
+    width: 100%;
+    height: 600px;
+    background-color: #FAFCFA;
+        text-align: center;
+
+
+}
+
+
+
+
+/* ALL ABOVE IS PRIMARY / MOBILE STYLING. BEGIN FIRST BREAKPOINT */
+
+@media (min-width: 575px){
+    .mainmenu{
+        display:flex;
+    }
+    .hamburger{
+        display:none;
+    }
+    .header{
+        justify-content: flex-start
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+    .mainmenu{
+        display:flex;
+        justify-content: space-between;
+        width:fit-content;
+    }
+    .mainmenu > li{
+        border:none !important;
+        padding:0px !important;
+        margin-right:10px;
+    }
+    .dropdown > ul{
+        display:flex;
+        position:absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        justify-content:space-around;
+    }
+    .dropdown > ul > li > a{
+        display:flex;
+        flex-direction: column;
+        width:110px;
+        text-align: center;
+    }
+    img{
+        width:100px;
+        display:initial;
+        margin:auto;
+        margin-bottom:5px;
+    }
+}
