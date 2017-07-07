@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Muli', sans-serif;
+
 }
 
 .hamburger {
@@ -38,6 +39,8 @@ body {
 .container {
     display:flex;
     background-color: black;
+    position: fixed;
+    top: 0;
 }
 
 .container.column {
@@ -107,7 +110,7 @@ header{
 
 .front {
     width: 100%;
-    height: 93vh;
+    height: 100vh;
 
     text-align: center;
 
@@ -115,7 +118,7 @@ header{
 
 .front img {
 
-    margin-top: 200px;
+    margin-top: 300px;
     width: 30%;
 
 }
@@ -124,11 +127,25 @@ header{
 
 .content {
     width: 100%;
-    height: 600px;
+    height: 300vh;
     background-color: #FAFCFA;
-        text-align: center;
+     text-align: center;
+}
 
+.content li {
 
+         list-style-type: none;
+}
+
+.content img {
+
+    height: 300px;
+    width: 300px;
+}
+
+.content a {
+
+    color: black;
 }
 
 
